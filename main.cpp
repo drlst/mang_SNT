@@ -10,12 +10,14 @@ using std::cin;
             return false;
         }
     return n > 1;
-}*/
+}
 bool isPrime1(int n) {
     for (int i = 2; i <= sqrt(n); i++)
         if (n % i == 0) return false;//ko la so ng to
     return n > 1;
 }
+*/
+
 
 void sieve(int N) {
     bool isPrime[N+1];
@@ -33,7 +35,7 @@ void sieve(int N) {
     }
     for (int i = 1; i <=N ; ++i) {
         if(isPrime[i]){
-            cout<<"\n"<<i<<"la so ngto";
+            cout<<"\n"<<i<<": la so ngto";
         }
     }
 }
