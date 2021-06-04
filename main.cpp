@@ -35,7 +35,7 @@ void sieve(int N) {
     }
     for (int i = 1; i <=N ; ++i) {
         if(isPrime[i]){
-            cout<<\n<<i<<"la so ngto";
+            cout<<"\n"<<i<<"la so ngto";
         }
     }
 }
