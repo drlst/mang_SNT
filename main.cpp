@@ -9,6 +9,15 @@ using std::cin;
             return false;
         }
     return n > 1;
+}/*
+
+/*bool isPrime(int n) {
+    for (int i = 2; i < n; i++)
+        if (n % i == 0) {
+            // n chia hết cho số khác 1 và chính nó.
+            return false;
+        }
+    return n > 1;
 }*/
 void sieve(int N) {
     bool isPrime[N+1];
@@ -22,6 +31,11 @@ void sieve(int N) {
             // Mark all the multiples of i as composite numbers
             for(int j = i * i; j <= N; j += i)
                 isPrime[j] = false;
+        }
+    }
+    for (int i = 1; i <=N ; ++i) {
+        if(isPrime[i]){
+            cout<<\n<<i<<"la so ngto";
         }
     }
 }
